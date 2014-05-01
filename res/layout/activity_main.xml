@@ -2,13 +2,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+        android:padding="40dp"
+        android:background="@color/blue"
+        >
 
     <TextView
+        android:id="@+id/select_device"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+        android:text="@string/select_device"
+        android:textSize="62dp"
+        android:textAllCaps="true"
+        android:textColor="@color/yellow"
+
+            />
+
+    <Spinner
+             android:id="@+id/drop_down"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/select_device"
+             android:layout_marginTop="20dp"
+             android:layout_marginLeft="210dp"
+
+
+            />
+
+    <ImageView
+            android:id="@+id/phone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/phone_image"
+            android:layout_below="@+id/select_device"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            />
 
 </RelativeLayout>
