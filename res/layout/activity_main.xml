@@ -19,28 +19,30 @@
 
             />
 
+    <ListView android:id="@+id/listView1"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent">
+    </ListView>
+
+   <Button
+           android:id="@+id/scanb"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/select_device"
+           />
+
     <Spinner
-             android:id="@+id/drop_down"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_below="@id/select_device"
-             android:layout_marginTop="20dp"
-             android:layout_marginLeft="210dp"
-
-
-            />
-
-    <ImageView
-            android:id="@+id/phone_image"
+            android:id="@+id/spin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/phone_image"
-            android:layout_below="@+id/select_device"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-
-
-
+            android:layout_below="@+id/scanb"
             />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan for devices"
+            android:id="@+id/button1"
+            android:layout_centerHorizontal="true"/>
+
 
 </RelativeLayout>
