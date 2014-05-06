@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
         android:padding="40dp"
-        android:background="@color/blue"
+        android:background="@color/white"
         >
 
     <TextView
@@ -13,36 +13,33 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/select_device"
+        android:fontFamily="sans-serif-thin"
         android:textSize="62dp"
-        android:textAllCaps="true"
-        android:textColor="@color/yellow"
-
+        android:textColor="@color/bB_blue"
+        android:paddingBottom="20dp"
             />
 
-    <ListView android:id="@+id/listView1"
-              android:layout_height="wrap_content"
-              android:layout_width="match_parent">
-    </ListView>
-
-   <Button
-           android:id="@+id/scanb"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_below="@id/select_device"
-           />
 
     <Spinner
             android:id="@+id/spin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/scanb"
+            android:layout_below="@+id/button1"
             />
+
     <Button
+            android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Scan for devices"
-            android:id="@+id/button1"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/select_device"
+            android:fontFamily="bold"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:padding="20dp"
+            android:layout_margin="40dp"/>
 
 
 </RelativeLayout>
