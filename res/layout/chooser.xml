@@ -4,7 +4,7 @@
                 android:layout_height="match_parent"
                 tools:context=".MainActivity"
                 android:padding="40dp"
-                android:background="@color/white"
+                android:background="#F0F8FF"
                 android:clickable="true">
 
     <TextView
@@ -15,7 +15,7 @@
             android:fontFamily="sans-serif-thin"
             android:textSize="45dp"
             android:textColor="@color/bB_blue"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="30dp"
             />
 
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -152,5 +152,44 @@
                 android:text="@string/smooth" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
 
     </GridLayout>
+
+    <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/GridLayout1"
+            android:text="@string/height"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="45dp"
+            android:textColor="@color/bB_blue"
+            android:layout_marginTop="30dp"
+            />
+
+    <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_below="@+id/height"
+            android:layout_marginTop="54dp"/>
+
+    <TextView
+            android:id="@+id/freq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:text="@string/height"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="45dp"
+            android:textColor="@color/bB_blue"
+            android:layout_marginTop="20dp"
+            />
+
+    <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekFreqBar"
+            android:text="@string/frequency"
+            android:layout_below="@+id/freq"
+            android:layout_marginTop="54dp"/>
 
 </RelativeLayout>
