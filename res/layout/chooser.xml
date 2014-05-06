@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:padding="40dp"
+                android:background="@color/white"
+                android:clickable="true">
+
+    <TextView
+            android:id="@+id/personalize_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personalize_kroeber"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="45dp"
+            android:textColor="@color/bB_blue"
+            android:layout_marginBottom="50dp"
+            />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/GridLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personalize_title"
+                android:columnCount="5"
+                android:rowCount="4"
+                android:orientation="horizontal"
+                tools:context=".GridXMLActivity" >
+        <Button
+                android:id="@+id/button_red1"
+                android:layout_gravity="left|top"
+                android:background="@color/red1"
+                android:layout_margin="10dp"/>
+
+        <Button
+                android:id="@+id/button_red2"
+                android:layout_gravity="left|top"
+                android:background="@color/red2"
+                android:layout_margin="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/button_red3"
+                android:layout_gravity="left|top"
+                android:background="@color/red3"
+                android:layout_margin="10dp"/>
+
+        <Button
+                android:id="@+id/button_red4"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/red4"  />
+
+        <Button
+                android:id="@+id/button_red5"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/red5"  />
+
+        <Button
+                android:id="@+id/button_green1"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/green1" />
+
+        <Button
+                android:id="@+id/button_green2"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/green2" />
+
+        <Button
+                android:id="@+id/button_green3"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/green3" />
+
+        <Button
+                android:id="@+id/button_green4"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/green4" />
+
+        <Button
+                android:id="@+id/button_green5"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/green5" /> />
+
+        <Button
+                android:id="@+id/button_blue1"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/blue1" />
+
+        <Button
+                android:id="@+id/button_blue2"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/blue2" />
+
+        <Button
+                android:id="@+id/button_blue3"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/blue3" />
+
+        <Button
+                android:id="@+id/button_blue4"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/blue4"/>
+
+        <Button
+                android:id="@+id/button_blue5"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/blue5" />
+
+        <Button
+                android:id="@+id/button_white"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                />
+
+        <Button
+                android:id="@+id/button_flash"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:text="@string/flash" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/button_strobe"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:text="@string/strobe" />
+
+
+        <Button
+                android:id="@+id/button_fade"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:text="@string/fade" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/button_smooth"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/smooth" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    </GridLayout>
+
+</RelativeLayout>

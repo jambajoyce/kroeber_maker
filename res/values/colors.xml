@@ -3,5 +3,20 @@
     <color name="yellow">#FFDB58</color>
     <color name="blue">#597DFF</color>
     <color name="white">#ffffffff</color>
-    <color name="bB_blue">#00d4ff</colo>
+    <color name="bB_blue">#00d4ff</color>
+    <color name="red1">#f03338</color>
+    <color name="red2">#ff6c31</color>
+    <color name="red3">#f05f33</color>
+    <color name="red4">#f39867</color>
+    <color name="red5">#dbd17a</color>
+    <color name="green1">#15b75b</color>
+    <color name="green2">#6becb0</color>
+    <color name="green3">#5cc2d2</color>
+    <color name="green4">#2fa4b7</color>
+    <color name="green5">#1a76b2</color>
+    <color name="blue1">#2d3696</color>
+    <color name="blue2">#1d67cb</color>
+    <color name="blue3">#3f357f</color>
+    <color name="blue4">#8d4a8b</color>
+    <color name="blue5">#ac6591</color>
 </resources>
