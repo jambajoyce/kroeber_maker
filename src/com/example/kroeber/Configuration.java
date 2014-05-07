@@ -23,4 +23,8 @@ public class Configuration implements Serializable {
     public int getFrequency() {
         return frequency;
     }
+
+    public String getName() {
+        return name;
+    }
 }
