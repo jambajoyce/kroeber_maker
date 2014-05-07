@@ -14,7 +14,8 @@ public class ChooserActivity extends Activity {
 		Intent i = getIntent();
 		Configuration config = (Configuration)i.getSerializableExtra("Config");
 		Toast.makeText(ChooserActivity.this, config.name, Toast.LENGTH_LONG).show();
-		
+
+
 	}
 
 }

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Set;
 import java.util.UUID;
+import java.util.Hashtable;
 
 import android.os.Bundle;
 import android.os.ParcelUuid;
@@ -29,6 +30,7 @@ public class MainActivity extends Activity {
     private ArrayAdapter<String> btArrayAdapter;
     private Spinner spinner;
     private BluetoothAdapter myBlueToothAdapter;
+    private static Hashtable user_settings = new Hashtable();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
