@@ -209,7 +209,7 @@ public class MainActivity extends Activity {
             }
         }};
 
-    public Hashtable<String, Configuration> getConfig() {
+    static Hashtable<String, Configuration> getHashtable() {
         return user_config;
     }
         

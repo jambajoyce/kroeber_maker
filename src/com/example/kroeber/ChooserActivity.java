@@ -6,11 +6,14 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
 import android.widget.SeekBar;
+import java.util.Hashtable;
 
 public class ChooserActivity extends Activity {
 	Configuration config;
     SeekBar freqSeek;
     SeekBar heightSeek;
+    Hashtable<String, Configuration> user_config = MainActivity.getHashtable();
+    String name;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,8 @@ public class ChooserActivity extends Activity {
 		setContentView(R.layout.chooser);
 		Intent i = getIntent();
 		config = (Configuration)i.getSerializableExtra("Config");
+        name = config.getName();
+        user_config.put(name, config);
 		Toast.makeText(ChooserActivity.this, config.name, Toast.LENGTH_LONG).show();
         final Button red1 = (Button) findViewById(R.id.button_red1);
         final Button red2 = (Button) findViewById(R.id.button_red2);
