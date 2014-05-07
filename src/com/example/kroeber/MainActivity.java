@@ -35,15 +35,11 @@ public class MainActivity extends Activity {
     private ArrayAdapter<String> btArrayAdapter;
     private Spinner spinner;
     private BluetoothAdapter myBlueToothAdapter;
-<<<<<<< HEAD
-    private static Hashtable hashtable = new Hashtable();
     private OutputStream mmOutputStream = null;
     private InputStream mmInputStream = null;
     
-=======
     private static Hashtable user_config = new Hashtable();
 
->>>>>>> 0d24623099d5db8f410b1c677b6241538ecccfd5
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -188,16 +184,16 @@ public class MainActivity extends Activity {
             if(BluetoothDevice.ACTION_FOUND.equals(action)) {
                 BluetoothDevice device2 = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
                 if ((device2.getName() != null) && (device2.getName().length() > 0)) {
-	                if (hashtable.containsKey(device2.getName() + "\n" + device2.getAddress())) {
-	                	Configuration activeConfig = (Configuration) hashtable.get(device2.getName() + "\n" + device2.getAddress());
+	                if (user_config.containsKey(device2.getName() + "\n" + device2.getAddress())) {
+	                	Configuration activeConfig = (Configuration) user_config.get(device2.getName() + "\n" + device2.getAddress());
 	                	String msg = "69";
 	                	try {
 							mmOutputStream.write(msg.getBytes());
-							msg = activeConfig.color;
+							msg = Integer.toString(activeConfig.color);
 							mmOutputStream.write(msg.getBytes());
-							msg = activeConfig.height;
+							msg = Integer.toString(activeConfig.height);
 							mmOutputStream.write(msg.getBytes());
-							msg = activeConfig.frequency;
+							msg = Integer.toString(activeConfig.frequency);
 							mmOutputStream.write(msg.getBytes());
 							msg = "70";
 							mmOutputStream.write(msg.getBytes());
