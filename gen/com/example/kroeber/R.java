@@ -38,6 +38,7 @@ public final class R {
     public static final class id {
         public static final int GridLayout1=0x7f080009;
         public static final int Step1=0x7f080001;
+        public static final int Submit=0x7f080022;
         public static final int button1=0x7f080002;
         public static final int button2=0x7f080006;
         public static final int button_blue1=0x7f080014;
@@ -65,7 +66,7 @@ public final class R {
         public static final int freqSeekBar=0x7f080021;
         public static final int height=0x7f08001e;
         public static final int heightSeekBar=0x7f08001f;
-        public static final int menu_settings=0x7f080022;
+        public static final int menu_settings=0x7f080023;
         public static final int personalize_title=0x7f080007;
         public static final int select_device=0x7f080000;
         public static final int select_spinner=0x7f080003;
@@ -98,6 +99,7 @@ public final class R {
         public static final int smooth=0x7f05000f;
         public static final int step1=0x7f05000a;
         public static final int strobe=0x7f05000d;
+        public static final int submit=0x7f050012;
     }
     public static final class style {
         /** 

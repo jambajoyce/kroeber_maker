@@ -185,6 +185,7 @@ public class MainActivity extends Activity {
                 if ((device2.getName() != null) && (device2.getName().length() > 0)) {
 	                if (user_config.containsKey(device2.getName() + "\n" + device2.getAddress())) {
 	                	Configuration activeConfig = (Configuration) user_config.get(device2.getName() + "\n" + device2.getAddress());
+                		System.out.println(device2.getName() + "\n" + device2.getAddress());
 	                	String msg = "69";
 	                	try {
 							mmOutputStream.write(msg.getBytes());
@@ -200,9 +201,6 @@ public class MainActivity extends Activity {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
-	                	
-	                	
-	                	
 	                }
                 }
             }
