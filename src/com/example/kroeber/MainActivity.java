@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
     private ArrayAdapter<String> btArrayAdapter;
     private Spinner spinner;
     private BluetoothAdapter myBlueToothAdapter;
-    private static Hashtable user_settings = new Hashtable();
+    private static Hashtable user_config = new Hashtable();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -122,5 +122,9 @@ public class MainActivity extends Activity {
                 }
             }
         }};
+
+    public Hashtable<String, Configuration> getConfig() {
+        return user_config;
+    }
         
 }
