@@ -8,19 +8,19 @@ import java.io.Serializable;
 public class Configuration implements Serializable {
 
 	public String name;
-    public String color;
-    public String height;
-    public String frequency;
+    public char color;
+    public char height;
+    public char frequency;
 
-    public String getColor() {
+    public char getColor() {
         return color;
     }
 
-    public String getHeight() {
+    public char getHeight() {
         return height;
     }
 
-    public String getFrequency() {
+    public char getFrequency() {
         return frequency;
     }
 

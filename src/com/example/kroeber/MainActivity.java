@@ -168,25 +168,31 @@ public class MainActivity extends Activity {
                 		System.out.println("Frequency: " + activeConfig.frequency);
                 		System.out.println("Height: " + activeConfig.height);
                 		System.out.println("Color: " + activeConfig.color);
-	                 	String msg = "0";
-	                 	byte [] msgBuffer = msg.getBytes();
+	                 	char msg = '0';
+	                 	//byte [] msgBuffer = msg.getBytes();
 	                	try {
+	                		mmOutputStream.write('0');
+	                		mmOutputStream.write('a');
+	                		
 	                		//msg += 'n';
-	                		mmOutputStream.write(msgBuffer);
+	                		/*
+	                		mmOutputStream.write(msg);
 							msg = activeConfig.color;
-							msgBuffer = msg.getBytes();
+							//msgBuffer = msg.getBytes();
 							//msg += 'n';
-							mmOutputStream.write(msgBuffer);
+							mmOutputStream.write(msg);
 							msg = activeConfig.height;
-							msgBuffer = msg.getBytes();
+							//msgBuffer = msg.getBytes();
 							//msg += 'n';
-							mmOutputStream.write(msgBuffer);
+							mmOutputStream.write(msg);
 							msg = activeConfig.frequency;
-							msgBuffer = msg.getBytes();
+							//msgBuffer = msg.getBytes();
 							//msg += 'n';
-							mmOutputStream.write(msgBuffer);
+							mmOutputStream.write(msg);
 							//msg = 70;
 							//mmOutputStream.write(msg);
+							 * */
+							 
 						} catch (IOException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
