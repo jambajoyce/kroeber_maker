@@ -29,7 +29,7 @@ public class ChooserActivity extends Activity {
         red1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 0;
+                config.color = "0";
                 Toast.makeText(ChooserActivity.this, "Red selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -38,7 +38,7 @@ public class ChooserActivity extends Activity {
         red2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 1;
+                config.color = "1";
                 Toast.makeText(ChooserActivity.this, "Bright Orange selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -47,7 +47,7 @@ public class ChooserActivity extends Activity {
         red3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 2;
+                config.color = "2";
                 Toast.makeText(ChooserActivity.this, "Orange selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -56,7 +56,7 @@ public class ChooserActivity extends Activity {
         red4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 3;
+                config.color = "3";
                 Toast.makeText(ChooserActivity.this, "Peach selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -65,7 +65,7 @@ public class ChooserActivity extends Activity {
         red5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 4;
+                config.color = "4";
                 Toast.makeText(ChooserActivity.this, "Yellow selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -74,7 +74,7 @@ public class ChooserActivity extends Activity {
         green1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 5;
+                config.color = "5";
                 Toast.makeText(ChooserActivity.this, "Green selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -83,7 +83,7 @@ public class ChooserActivity extends Activity {
         green2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 6;
+                config.color = "6";
                 Toast.makeText(ChooserActivity.this, "Seafoam Green selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -92,7 +92,7 @@ public class ChooserActivity extends Activity {
         green3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 7;
+                config.color = "7";
                 Toast.makeText(ChooserActivity.this, "Turquoise selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -101,7 +101,7 @@ public class ChooserActivity extends Activity {
         green4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 8;
+                config.color = "8";
                 Toast.makeText(ChooserActivity.this, "Teal selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -111,7 +111,7 @@ public class ChooserActivity extends Activity {
         green5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 9;
+                config.color = "9";
                 Toast.makeText(ChooserActivity.this, "Royal Blue selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -121,7 +121,7 @@ public class ChooserActivity extends Activity {
         blue1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 10;
+                config.color = "a";
                 Toast.makeText(ChooserActivity.this, "Blue selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -130,7 +130,7 @@ public class ChooserActivity extends Activity {
         blue2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 11;
+                config.color = "b";
                 Toast.makeText(ChooserActivity.this, "Dodger Blue selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -139,7 +139,7 @@ public class ChooserActivity extends Activity {
         blue3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 12;
+                config.color = "c";
                 Toast.makeText(ChooserActivity.this, "Indigo selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -148,7 +148,7 @@ public class ChooserActivity extends Activity {
         blue4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 13;
+                config.color = "d";
                 Toast.makeText(ChooserActivity.this, "Purple selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -157,7 +157,7 @@ public class ChooserActivity extends Activity {
         blue5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 14;
+                config.color = "e";
                 Toast.makeText(ChooserActivity.this, "Light Purple selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -166,7 +166,7 @@ public class ChooserActivity extends Activity {
         white.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 15;
+                config.color = "f";
                 Toast.makeText(ChooserActivity.this, "White selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -175,7 +175,7 @@ public class ChooserActivity extends Activity {
         flash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 16;
+                config.color = "g";
                 Toast.makeText(ChooserActivity.this, "Flash selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -185,7 +185,7 @@ public class ChooserActivity extends Activity {
         fade.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 17;
+                config.color = "h";
                 Toast.makeText(ChooserActivity.this, "Fade selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -194,7 +194,7 @@ public class ChooserActivity extends Activity {
         strobe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 18;
+                config.color = "i";
                 Toast.makeText(ChooserActivity.this, "Strobe selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -203,7 +203,7 @@ public class ChooserActivity extends Activity {
         smooth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                config.color = 19;
+                config.color = "j";
                 Toast.makeText(ChooserActivity.this, "Smooth selected", Toast.LENGTH_LONG).show();
             }
         });
@@ -223,7 +223,7 @@ public class ChooserActivity extends Activity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                config.frequency = seekBar.getProgress();
+                config.frequency = Integer.toString(seekBar.getProgress());
             }
         });
         
@@ -241,7 +241,7 @@ public class ChooserActivity extends Activity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                config.height = seekBar.getProgress();
+                config.height = Integer.toString(seekBar.getProgress());
             }
         });
         final Context context = this;
