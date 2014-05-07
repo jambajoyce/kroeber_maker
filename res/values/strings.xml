@@ -19,5 +19,6 @@
     <string name="smooth">Smooth</string>
     <string name="height">Height</string>
     <string name="frequency">Frequency</string>
+    <string name="submit">Submit</string>
 
 </resources>

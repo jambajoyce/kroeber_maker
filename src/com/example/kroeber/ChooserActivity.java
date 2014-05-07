@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.widget.SeekBar;
 import java.util.Hashtable;
+import android.view.View;
 
 public class ChooserActivity extends Activity {
 	Configuration config;
@@ -81,86 +82,90 @@ public class ChooserActivity extends Activity {
         });
 	}
 
-    protected void red1Click() {
+    protected void red1Click(View v) {
         config.color = 0;
     }
 
-    protected void green1Click() {
+    protected void green1Click(View v) {
         config.color = 1;
     }
 
-    protected void blue1Click() {
+    protected void blue1Click(View v) {
         config.color = 2;
     }
 
 
-    protected void whiteClick() {
+    protected void whiteClick(View v) {
         config.color = 3;
     }
 
-    protected void red2Click() {
+    protected void red2Click(View v) {
         config.color = 4;
     }
 
-    protected void green2Click() {
+    protected void green2Click(View v) {
         config.color = 5;
     }
 
-    protected void blue2Click() {
+    protected void blue2Click(View v) {
         config.color = 6;
     }
 
-    protected void flashClick() {
+    protected void flashClick(View v) {
         config.color = 7;
     }
 
-    protected void red3Click() {
+    protected void red3Click(View v) {
         config.color = 8;
     }
 
-    protected void green3Click() {
+    protected void green3Click(View v) {
         config.color = 9;
     }
 
-    protected void blue3Click() {
+    protected void blue3Click(View v) {
         config.color = 10;
     }
 
-    protected void strobeClick() {
+    protected void strobeClick(View v) {
         config.color = 11;
     }
 
-    protected void red4Click() {
+    protected void red4Click(View v) {
         config.color = 12;
     }
 
-    protected void green4Click() {
+    protected void green4Click(View v) {
         config.color = 13;
     }
 
-    protected void blue4Click() {
+    protected void blue4Click(View v) {
         config.color = 14;
     }
 
-    protected void fadeClick() {
+    protected void fadeClick(View v) {
         config.color = 15;
     }
 
-    protected void red5Click() {
+    protected void red5Click(View v) {
         config.color = 16;
     }
 
-    protected void green5Click() {
+    protected void green5Click(View v) {
         config.color = 17;
     }
 
-    protected void blue5Click() {
+    protected void blue5Click(View v) {
         config.color = 18;
     }
 
-    protected void smooth5Click() {
+    protected void smoothClick(View v) {
         config.color = 19;
     }
 
+    protected void submitConfigs(View v) {
+        Intent startMain = new Intent(this, MainActivity.class);
+        startActivity(startMain);
+    }
 
 }
