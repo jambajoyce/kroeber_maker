@@ -224,9 +224,9 @@ public class ChooserActivity extends Activity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 config.frequency = seekBar.getProgress();
-                Toast.makeText(ChooserActivity.this, "Frequency set as" + config.frequency, Toast.LENGTH_LONG).show();
             }
         });
+        
         heightSeek = (SeekBar) findViewById(R.id.heightSeekBar);
         heightSeek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -242,7 +242,6 @@ public class ChooserActivity extends Activity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 config.height = seekBar.getProgress();
-                Toast.makeText(ChooserActivity.this, "Height set as" + config.frequency, Toast.LENGTH_LONG).show();
             }
         });
         final Context context = this;
