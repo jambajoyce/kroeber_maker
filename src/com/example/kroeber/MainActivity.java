@@ -1,11 +1,21 @@
 package com.example.kroeber;
 
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.Set;
+import java.util.UUID;
+import java.util.Hashtable;
+
 import android.os.Bundle;
+import android.os.ParcelUuid;
+import android.os.Parcelable;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -17,25 +27,28 @@ import android.widget.*;
 
 public class MainActivity extends Activity {
 
-    private  ArrayAdapter<String> btArrayAdapter;
+    private ArrayAdapter<String> btArrayAdapter;
     private Spinner spinner;
+    private BluetoothAdapter myBlueToothAdapter;
+    private static Hashtable user_settings = new Hashtable();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        final BluetoothAdapter myBlueToothAdapter = BluetoothAdapter.getDefaultAdapter();
-        final ListView Deviceslist = (ListView) findViewById(R.id.listView1);
+        myBlueToothAdapter = BluetoothAdapter.getDefaultAdapter();
         final Spinner spinner = (Spinner) findViewById(R.id.spin);
         final Button scanb = (Button) findViewById(R.id.button1);
+        final Button next = (Button) findViewById(R.id.button2);
         btArrayAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1);
-        Deviceslist.setAdapter(btArrayAdapter);
+        
+        final Configuration config = new Configuration();
+    
+        final Context context = this;
 
         //Turn on Bluetooth
         if (myBlueToothAdapter==null)
-            Toast.makeText(MainActivity.this, "Your device doesnot support Bluetooth", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "Your device does not support Bluetooth", Toast.LENGTH_LONG).show();
         else if (!myBlueToothAdapter.isEnabled()) {
             Intent BtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(BtIntent, 0);
@@ -49,11 +62,35 @@ public class MainActivity extends Activity {
                 btArrayAdapter.clear();
                 myBlueToothAdapter.startDiscovery();
                 Toast.makeText(MainActivity.this, "Scanning Devices", Toast.LENGTH_LONG).show();
-
             }
         });
 
         registerReceiver(FoundReceiver, new IntentFilter(BluetoothDevice.ACTION_FOUND));
+	
+        spinner.setAdapter(btArrayAdapter);
+        
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+        	   public void onItemSelected(AdapterView<?> parent, View v, int pos, long id) {
+        	      String selectedItem = parent.getItemAtPosition(pos).toString();
+        	      // make insertion into database
+        	      config.name = selectedItem;
+        	   }
+
+        	   public void onNothingSelected(AdapterView<?> parent) {
+
+        	   }
+        	});
+        
+        next.setOnClickListener(new OnClickListener()
+        {
+            public void onClick(View v)
+            {
+            	Intent startChooser = new Intent(context, ChooserActivity.class);
+            	startChooser.putExtra("Config", config);
+            	startActivity(startChooser);
+            }
+        });
 
     }
 
@@ -78,15 +115,12 @@ public class MainActivity extends Activity {
             String action = intent.getAction();
             if(BluetoothDevice.ACTION_FOUND.equals(action)) {
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                btArrayAdapter.add(device.getName() + "\n" + device.getAddress());
-                btArrayAdapter.notifyDataSetChanged();
-
+                if ((device.getName() != null) && (device.getName().length() > 0)) {
+	                btArrayAdapter.add(device.getName() + "\n" + device.getAddress());
+	                btArrayAdapter.notifyDataSetChanged();
+	                //Change below to submitted selection
+                }
             }
-            spinner.setAdapter(btArrayAdapter);
         }};
-
-
-
-
-
+        
 }
