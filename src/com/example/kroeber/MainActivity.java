@@ -37,7 +37,6 @@ public class MainActivity extends Activity {
     private BluetoothAdapter myBlueToothAdapter;
     private OutputStream mmOutputStream = null;
     private InputStream mmInputStream = null;
-    
     private static Hashtable user_config = new Hashtable();
 
 	@Override

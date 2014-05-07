@@ -229,4 +229,16 @@
             android:max="5"
             android:layout_alignParentStart="true"/>
 
+    <Button
+            android:id="@+id/Submit"
+            android:layout_below="@+id/freqSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="submitConfigs"
+            android:text="@string/submit"
+            android:layout_centerHorizontal="true"
+            />
+
+
 </RelativeLayout>
