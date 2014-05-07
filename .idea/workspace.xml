@@ -28,8 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bf84636-d8b1-4bc2-98d6-5610341ae7b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/kroeber/ChooserActivity.java" afterPath="$PROJECT_DIR$/src/com/example/kroeber/ChooserActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/chooser.xml" afterPath="$PROJECT_DIR$/res/layout/chooser.xml" />
     </list>
     <ignored path="kroeber2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,21 +57,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.57258064">
       <split-first>
         <leaf>
-          <file leaf-file-name="chooser.xml" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="chooser.xml" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/res/layout/chooser.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-132.77777" vertical-offset="0" max-vertical-offset="3735">
-                  <caret line="239" column="50" selection-start-line="239" selection-start-column="50" selection-end-line="239" selection-end-column="50" />
+                <state vertical-scroll-proportion="0.386121" vertical-offset="2243" max-vertical-offset="3435">
+                  <caret line="164" column="57" selection-start-line="164" selection-start-column="57" selection-end-line="164" selection-end-column="57" />
                   <folding>
                     <element signature="e#517#546#0" expanded="true" />
                     <element signature="e#978#1000#0" expanded="true" />
-                    <element signature="e#6108#6123#0" expanded="true" />
-                    <element signature="e#6511#6527#0" expanded="true" />
-                    <element signature="e#6763#6777#0" expanded="true" />
-                    <element signature="e#7146#7162#0" expanded="true" />
-                    <element signature="e#7482#7498#0" expanded="true" />
-                    <element signature="e#8250#8269#0" expanded="true" />
-                    <element signature="e#9099#9115#0" expanded="true" />
+                    <element signature="e#5388#5403#0" expanded="true" />
+                    <element signature="e#5700#5716#0" expanded="true" />
+                    <element signature="e#5908#5922#0" expanded="true" />
+                    <element signature="e#6245#6261#0" expanded="true" />
+                    <element signature="e#6581#6597#0" expanded="true" />
+                    <element signature="e#7349#7368#0" expanded="true" />
+                    <element signature="e#8198#8214#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -81,10 +80,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.57385397" vertical-offset="2227" max-vertical-offset="3195">
+                <state vertical-scroll-proportion="-13.0" vertical-offset="2227" max-vertical-offset="3195">
                   <caret line="179" column="63" selection-start-line="179" selection-start-column="63" selection-end-line="179" selection-end-column="63" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -164,11 +163,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ChooserActivity.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ChooserActivity.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/example/kroeber/ChooserActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="7.487805" vertical-offset="0" max-vertical-offset="4800">
-                  <caret line="307" column="2" selection-start-line="307" selection-start-column="2" selection-end-line="307" selection-end-column="2" />
+                <state vertical-scroll-proportion="0.58536583" vertical-offset="105" max-vertical-offset="4800">
+                  <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#953#1106#0" expanded="true" />
@@ -254,8 +253,8 @@
         <option value="$PROJECT_DIR$/src/com/example/kroeber/Configuration.java" />
         <option value="$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/layout/chooser.xml" />
         <option value="$PROJECT_DIR$/src/com/example/kroeber/ChooserActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/chooser.xml" />
       </list>
     </option>
   </component>
@@ -722,7 +721,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.095623985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09577922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -801,13 +800,13 @@
           <folding>
             <element signature="e#517#546#0" expanded="true" />
             <element signature="e#978#1000#0" expanded="true" />
-            <element signature="e#6108#6123#0" expanded="true" />
-            <element signature="e#6511#6527#0" expanded="true" />
-            <element signature="e#6763#6777#0" expanded="true" />
-            <element signature="e#7146#7162#0" expanded="true" />
-            <element signature="e#7482#7498#0" expanded="true" />
-            <element signature="e#8250#8269#0" expanded="true" />
-            <element signature="e#9099#9115#0" expanded="true" />
+            <element signature="e#5388#5403#0" expanded="true" />
+            <element signature="e#5700#5716#0" expanded="true" />
+            <element signature="e#5908#5922#0" expanded="true" />
+            <element signature="e#6245#6261#0" expanded="true" />
+            <element signature="e#6581#6597#0" expanded="true" />
+            <element signature="e#7349#7368#0" expanded="true" />
+            <element signature="e#8198#8214#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1102,27 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/chooser.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-132.77777" vertical-offset="0" max-vertical-offset="3735">
-          <caret line="239" column="50" selection-start-line="239" selection-start-column="50" selection-end-line="239" selection-end-column="50" />
-          <folding>
-            <element signature="e#517#546#0" expanded="true" />
-            <element signature="e#978#1000#0" expanded="true" />
-            <element signature="e#6108#6123#0" expanded="true" />
-            <element signature="e#6511#6527#0" expanded="true" />
-            <element signature="e#6763#6777#0" expanded="true" />
-            <element signature="e#7146#7162#0" expanded="true" />
-            <element signature="e#7482#7498#0" expanded="true" />
-            <element signature="e#8250#8269#0" expanded="true" />
-            <element signature="e#9099#9115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="389">
@@ -1139,14 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
@@ -1157,7 +1127,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57385397" vertical-offset="2227" max-vertical-offset="3195">
+        <state vertical-scroll-proportion="-13.0" vertical-offset="2227" max-vertical-offset="3195">
           <caret line="179" column="63" selection-start-line="179" selection-start-column="63" selection-end-line="179" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1175,8 +1145,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/kroeber/ChooserActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.487805" vertical-offset="0" max-vertical-offset="4800">
-          <caret line="307" column="2" selection-start-line="307" selection-start-column="2" selection-end-line="307" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.58536583" vertical-offset="105" max-vertical-offset="4800">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#953#1106#0" expanded="true" />
@@ -1225,6 +1195,35 @@
             <element signature="e#7144#7145#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/chooser.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.386121" vertical-offset="2243" max-vertical-offset="3435">
+          <caret line="164" column="57" selection-start-line="164" selection-start-column="57" selection-end-line="164" selection-end-column="57" />
+          <folding>
+            <element signature="e#517#546#0" expanded="true" />
+            <element signature="e#978#1000#0" expanded="true" />
+            <element signature="e#5388#5403#0" expanded="true" />
+            <element signature="e#5700#5716#0" expanded="true" />
+            <element signature="e#5908#5922#0" expanded="true" />
+            <element signature="e#6245#6261#0" expanded="true" />
+            <element signature="e#6581#6597#0" expanded="true" />
+            <element signature="e#7349#7368#0" expanded="true" />
+            <element signature="e#8198#8214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
