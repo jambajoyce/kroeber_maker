@@ -212,7 +212,7 @@
             android:layout_alignEnd="@+id/heightSeekBar"/>
 
     <Button
-            android:id="@+id/Submit"
+            android:id="@+id/submit"
             android:layout_below="@+id/freqSeekBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
