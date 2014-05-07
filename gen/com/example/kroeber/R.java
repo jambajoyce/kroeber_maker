@@ -62,11 +62,11 @@ public final class R {
         public static final int button_white=0x7f080019;
         public static final int choose_color=0x7f080008;
         public static final int freq=0x7f080020;
+        public static final int freqSeekBar=0x7f080021;
         public static final int height=0x7f08001e;
+        public static final int heightSeekBar=0x7f08001f;
         public static final int menu_settings=0x7f080022;
         public static final int personalize_title=0x7f080007;
-        public static final int seekBar=0x7f08001f;
-        public static final int seekFreqBar=0x7f080021;
         public static final int select_device=0x7f080000;
         public static final int select_spinner=0x7f080003;
         public static final int spin=0x7f080004;

@@ -28,7 +28,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bf84636-d8b1-4bc2-98d6-5610341ae7b5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Kroeber.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/resources.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/example/kroeber/BuildConfig.class" afterPath="$PROJECT_DIR$/bin/classes/com/example/kroeber/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/example/kroeber/MainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/example/kroeber/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/example/kroeber/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/com/example/kroeber/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dexedLibs/android-support-v4-56ce09c1db9bcb2cf82eaed16cf256a8.jar" afterPath="$PROJECT_DIR$/bin/dexedLibs/android-support-v4-56ce09c1db9bcb2cf82eaed16cf256a8.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/example/kroeber/R.java" afterPath="$PROJECT_DIR$/gen/com/example/kroeber/R.java" />
     </list>
     <ignored path="kroeber2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,21 +83,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.43678162" vertical-offset="2495" max-vertical-offset="3195">
-                  <caret line="187" column="42" selection-start-line="187" selection-start-column="42" selection-end-line="187" selection-end-column="42" />
+                <state vertical-scroll-proportion="0.44827586" vertical-offset="420" max-vertical-offset="3195">
+                  <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#3370#3685#0" expanded="true" />
                     <element signature="e#3674#3675#0" expanded="true" />
                     <element signature="e#5433#6062#0" expanded="true" />
                     <element signature="e#6060#6061#0" expanded="true" />
-                    <element signature="e#6129#7442#0" expanded="true" />
-                    <element signature="e#7440#7441#0" expanded="true" />
-                    <element signature="e#7504#7505#0" expanded="true" />
-                    <element signature="e#7538#7539#0" expanded="true" />
+                    <element signature="e#6129#7496#0" expanded="true" />
+                    <element signature="e#7494#7495#0" expanded="true" />
+                    <element signature="e#7558#7559#0" expanded="true" />
+                    <element signature="e#7592#7593#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -111,7 +119,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Configuration.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Configuration.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/example/kroeber/Configuration.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.5691964" vertical-offset="0" max-vertical-offset="510">
@@ -170,8 +178,8 @@
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/chooser.xml" />
         <option value="$PROJECT_DIR$/src/com/example/kroeber/ChooserActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/kroeber/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -783,10 +791,10 @@
             <element signature="e#3674#3675#0" expanded="true" />
             <element signature="e#5433#6062#0" expanded="true" />
             <element signature="e#6060#6061#0" expanded="true" />
-            <element signature="e#6129#7442#0" expanded="true" />
-            <element signature="e#7440#7441#0" expanded="true" />
-            <element signature="e#7504#7505#0" expanded="true" />
-            <element signature="e#7538#7539#0" expanded="true" />
+            <element signature="e#6129#7496#0" expanded="true" />
+            <element signature="e#7494#7495#0" expanded="true" />
+            <element signature="e#7558#7559#0" expanded="true" />
+            <element signature="e#7592#7593#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -848,10 +856,10 @@
             <element signature="e#3674#3675#0" expanded="true" />
             <element signature="e#5433#6062#0" expanded="true" />
             <element signature="e#6060#6061#0" expanded="true" />
-            <element signature="e#6129#7442#0" expanded="true" />
-            <element signature="e#7440#7441#0" expanded="true" />
-            <element signature="e#7504#7505#0" expanded="true" />
-            <element signature="e#7538#7539#0" expanded="true" />
+            <element signature="e#6129#7496#0" expanded="true" />
+            <element signature="e#7494#7495#0" expanded="true" />
+            <element signature="e#7558#7559#0" expanded="true" />
+            <element signature="e#7592#7593#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -913,10 +921,10 @@
             <element signature="e#3674#3675#0" expanded="true" />
             <element signature="e#5433#6062#0" expanded="true" />
             <element signature="e#6060#6061#0" expanded="true" />
-            <element signature="e#6129#7442#0" expanded="true" />
-            <element signature="e#7440#7441#0" expanded="true" />
-            <element signature="e#7504#7505#0" expanded="true" />
-            <element signature="e#7538#7539#0" expanded="true" />
+            <element signature="e#6129#7496#0" expanded="true" />
+            <element signature="e#7494#7495#0" expanded="true" />
+            <element signature="e#7558#7559#0" expanded="true" />
+            <element signature="e#7592#7593#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1074,24 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43678162" vertical-offset="2495" max-vertical-offset="3195">
-          <caret line="187" column="42" selection-start-line="187" selection-start-column="42" selection-end-line="187" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3370#3685#0" expanded="true" />
-            <element signature="e#3674#3675#0" expanded="true" />
-            <element signature="e#5433#6062#0" expanded="true" />
-            <element signature="e#6060#6061#0" expanded="true" />
-            <element signature="e#6129#7442#0" expanded="true" />
-            <element signature="e#7440#7441#0" expanded="true" />
-            <element signature="e#7504#7505#0" expanded="true" />
-            <element signature="e#7538#7539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/kroeber/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5691964" vertical-offset="0" max-vertical-offset="510">
@@ -1105,6 +1095,24 @@
             <element signature="e#469#470#0" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/kroeber/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44827586" vertical-offset="420" max-vertical-offset="3195">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3370#3685#0" expanded="true" />
+            <element signature="e#3674#3675#0" expanded="true" />
+            <element signature="e#5433#6062#0" expanded="true" />
+            <element signature="e#6060#6061#0" expanded="true" />
+            <element signature="e#6129#7496#0" expanded="true" />
+            <element signature="e#7494#7495#0" expanded="true" />
+            <element signature="e#7558#7559#0" expanded="true" />
+            <element signature="e#7592#7593#0" expanded="true" />
           </folding>
         </state>
       </provider>

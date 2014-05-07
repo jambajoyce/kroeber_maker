@@ -188,11 +188,11 @@ public class MainActivity extends Activity {
 	                	String msg = "69";
 	                	try {
 							mmOutputStream.write(msg.getBytes());
-							msg = activeConfig.color;
+							msg = Integer.toString(activeConfig.color);
 							mmOutputStream.write(msg.getBytes());
-							msg = activeConfig.height;
+							msg = Integer.toString(activeConfig.height);
 							mmOutputStream.write(msg.getBytes());
-							msg = activeConfig.frequency;
+							msg = Integer.toString(activeConfig.frequency);
 							mmOutputStream.write(msg.getBytes());
 							msg = "70";
 							mmOutputStream.write(msg.getBytes());
