@@ -35,10 +35,15 @@ public class MainActivity extends Activity {
     private ArrayAdapter<String> btArrayAdapter;
     private Spinner spinner;
     private BluetoothAdapter myBlueToothAdapter;
+<<<<<<< HEAD
     private static Hashtable hashtable = new Hashtable();
     private OutputStream mmOutputStream = null;
     private InputStream mmInputStream = null;
     
+=======
+    private static Hashtable user_config = new Hashtable();
+
+>>>>>>> 0d24623099d5db8f410b1c677b6241538ecccfd5
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -207,5 +212,9 @@ public class MainActivity extends Activity {
                 }
             }
         }};
+
+    public Hashtable<String, Configuration> getConfig() {
+        return user_config;
+    }
         
 }
