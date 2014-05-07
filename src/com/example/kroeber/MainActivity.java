@@ -1,9 +1,15 @@
 package com.example.kroeber;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.lang.reflect.Method;
+import java.net.Socket;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.UUID;
+import java.util.Hashtable;
 
 import android.os.Bundle;
 import android.os.ParcelUuid;
@@ -29,7 +35,10 @@ public class MainActivity extends Activity {
     private ArrayAdapter<String> btArrayAdapter;
     private Spinner spinner;
     private BluetoothAdapter myBlueToothAdapter;
-
+    private static Hashtable hashtable = new Hashtable();
+    private OutputStream mmOutputStream = null;
+    private InputStream mmInputStream = null;
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -43,7 +52,11 @@ public class MainActivity extends Activity {
         final Configuration config = new Configuration();
     
         final Context context = this;
-
+        
+        Timer timer = new Timer();
+        
+        BluetoothDevice arduinoDevice = null;
+        
         //Turn on Bluetooth
         if (myBlueToothAdapter==null)
             Toast.makeText(MainActivity.this, "Your device does not support Bluetooth", Toast.LENGTH_LONG).show();
@@ -52,6 +65,48 @@ public class MainActivity extends Activity {
             startActivityForResult(BtIntent, 0);
             Toast.makeText(MainActivity.this, "Turning on Bluetooth", Toast.LENGTH_LONG).show();
         }
+        
+        //Connect to Arduino
+        Set<BluetoothDevice> pairedDevices = myBlueToothAdapter.getBondedDevices();
+        if(pairedDevices.size() > 0)
+        {
+            for(BluetoothDevice device : pairedDevices)
+            {
+                if(device.getName().equals("SMiRF-5EDB"))
+                {
+                    arduinoDevice = device;
+                    break;
+                }
+            }
+        }
+        
+        UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb"); //Standard SerialPortService ID
+        BluetoothSocket mmSocket;
+		try {
+			mmSocket = arduinoDevice.createRfcommSocketToServiceRecord(uuid);
+	        mmSocket.connect();
+	        mmOutputStream = mmSocket.getOutputStream();
+	        mmInputStream = mmSocket.getInputStream();
+		}
+        catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+        //Continuously scan
+        timer.schedule(new TimerTask()
+        {
+            @Override
+            public void run()
+            {
+                // TODO do your thing
+            	myBlueToothAdapter.startDiscovery();
+            	registerReceiver(ContFoundReceiver, new IntentFilter(BluetoothDevice.ACTION_FOUND));
+            	
+            }
+        }, 0, 10000);
+
+        
         //scan
         scanb.setOnClickListener(new OnClickListener()
         {
@@ -116,7 +171,39 @@ public class MainActivity extends Activity {
                 if ((device.getName() != null) && (device.getName().length() > 0)) {
 	                btArrayAdapter.add(device.getName() + "\n" + device.getAddress());
 	                btArrayAdapter.notifyDataSetChanged();
-	                //Change below to submitted selection
+                }
+            }
+        }};
+        
+    private final BroadcastReceiver ContFoundReceiver = new BroadcastReceiver(){
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            // TODO Auto-generated method stub
+            String action = intent.getAction();
+            if(BluetoothDevice.ACTION_FOUND.equals(action)) {
+                BluetoothDevice device2 = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+                if ((device2.getName() != null) && (device2.getName().length() > 0)) {
+	                if (hashtable.containsKey(device2.getName() + "\n" + device2.getAddress())) {
+	                	Configuration activeConfig = (Configuration) hashtable.get(device2.getName() + "\n" + device2.getAddress());
+	                	String msg = "69";
+	                	try {
+							mmOutputStream.write(msg.getBytes());
+							msg = activeConfig.color;
+							mmOutputStream.write(msg.getBytes());
+							msg = activeConfig.height;
+							mmOutputStream.write(msg.getBytes());
+							msg = activeConfig.frequency;
+							mmOutputStream.write(msg.getBytes());
+							msg = "70";
+							mmOutputStream.write(msg.getBytes());
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+	                	
+	                	
+	                	
+	                }
                 }
             }
         }};
