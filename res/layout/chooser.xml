@@ -186,7 +186,8 @@
             android:layout_below="@+id/height"
             android:layout_alignParentLeft="true"
             android:max="255"
-            android:layout_alignParentStart="true"/>
+            android:layout_alignParentStart="true" android:layout_alignRight="@+id/GridLayout1"
+            android:layout_alignEnd="@+id/GridLayout1"/>
 
     <TextView
             android:id="@+id/freq"
@@ -207,7 +208,8 @@
             android:layout_below="@+id/freq"
             android:layout_alignParentLeft="true"
             android:max="5"
-            android:layout_alignParentStart="true"/>
+            android:layout_alignParentStart="true" android:layout_alignRight="@+id/heightSeekBar"
+            android:layout_alignEnd="@+id/heightSeekBar"/>
 
     <Button
             android:id="@+id/Submit"

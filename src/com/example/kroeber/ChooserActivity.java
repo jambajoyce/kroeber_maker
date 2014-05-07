@@ -30,6 +30,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 0;
+                Toast.makeText(ChooserActivity.this, "Red selected", Toast.LENGTH_LONG).show();
             }
         });
 
