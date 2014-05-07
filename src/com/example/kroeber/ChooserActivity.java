@@ -1,6 +1,7 @@
 package com.example.kroeber;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -23,7 +24,6 @@ public class ChooserActivity extends Activity {
 		Intent i = getIntent();
 		config = (Configuration)i.getSerializableExtra("Config");
         name = config.getName();
-        user_config.put(name, config);
 		Toast.makeText(ChooserActivity.this, config.name, Toast.LENGTH_LONG).show();
         final Button red1 = (Button) findViewById(R.id.button_red1);
         red1.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +39,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 1;
+                Toast.makeText(ChooserActivity.this, "Bright Orange selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -47,6 +48,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 2;
+                Toast.makeText(ChooserActivity.this, "Orange selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -55,6 +57,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 3;
+                Toast.makeText(ChooserActivity.this, "Peach selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -63,6 +66,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 4;
+                Toast.makeText(ChooserActivity.this, "Yellow selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -71,6 +75,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 5;
+                Toast.makeText(ChooserActivity.this, "Green selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -79,6 +84,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 6;
+                Toast.makeText(ChooserActivity.this, "Seafoam Green selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -87,6 +93,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 7;
+                Toast.makeText(ChooserActivity.this, "Turquoise selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -95,6 +102,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 8;
+                Toast.makeText(ChooserActivity.this, "Teal selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -104,6 +112,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 9;
+                Toast.makeText(ChooserActivity.this, "Royal Blue selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -113,6 +122,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 10;
+                Toast.makeText(ChooserActivity.this, "Blue selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -121,6 +131,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 11;
+                Toast.makeText(ChooserActivity.this, "Dodger Blue selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -129,6 +140,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 12;
+                Toast.makeText(ChooserActivity.this, "Indigo selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -137,6 +149,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 13;
+                Toast.makeText(ChooserActivity.this, "Purple selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -145,6 +158,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 14;
+                Toast.makeText(ChooserActivity.this, "Light Purple selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -153,6 +167,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 15;
+                Toast.makeText(ChooserActivity.this, "White selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -161,6 +176,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 16;
+                Toast.makeText(ChooserActivity.this, "Flash selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -170,6 +186,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 17;
+                Toast.makeText(ChooserActivity.this, "Fade selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -178,6 +195,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 18;
+                Toast.makeText(ChooserActivity.this, "Strobe selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -186,6 +204,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onClick(View view) {
                 config.color = 19;
+                Toast.makeText(ChooserActivity.this, "Smooth selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -205,6 +224,7 @@ public class ChooserActivity extends Activity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 config.frequency = seekBar.getProgress();
+                Toast.makeText(ChooserActivity.this, "Frequency set as" + config.frequency, Toast.LENGTH_LONG).show();
             }
         });
         heightSeek = (SeekBar) findViewById(R.id.heightSeekBar);
@@ -222,8 +242,21 @@ public class ChooserActivity extends Activity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 config.height = seekBar.getProgress();
+                Toast.makeText(ChooserActivity.this, "Height set as" + config.frequency, Toast.LENGTH_LONG).show();
             }
         });
+        final Context context = this;
+        final Button submit = (Button) findViewById(R.id.submit);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                user_config.put(name, config);
+                Intent startMain = new Intent(context, MainActivity.class);
+                startActivity(startMain);
+            }
+
+        });
+
 	}
 /**
     protected void red1Click(View v) {
@@ -307,9 +340,6 @@ public class ChooserActivity extends Activity {
         config.color = 19;
     }
 */
-    protected void submitConfigs(View v) {
-        Intent startMain = new Intent(this, MainActivity.class);
-        startActivity(startMain);
-    }
+
 
 }
