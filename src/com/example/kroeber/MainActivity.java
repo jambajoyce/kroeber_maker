@@ -7,6 +7,7 @@ import java.util.UUID;
 
 import android.os.Bundle;
 import android.os.ParcelUuid;
+import android.os.Parcelable;
 import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
@@ -25,23 +26,23 @@ import android.widget.*;
 
 public class MainActivity extends Activity {
 
-    private  ArrayAdapter<String> btArrayAdapter;
+    private ArrayAdapter<String> btArrayAdapter;
     private Spinner spinner;
     private BluetoothAdapter myBlueToothAdapter;
-    //private static final UUID MY_UUID = UUID.fromString("0000110E-0000-1000-8000-00805F9B34FB");
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         myBlueToothAdapter = BluetoothAdapter.getDefaultAdapter();
-        //final ListView Deviceslist = (ListView) findViewById(R.id.listView1);
         final Spinner spinner = (Spinner) findViewById(R.id.spin);
         final Button scanb = (Button) findViewById(R.id.button1);
+        final Button next = (Button) findViewById(R.id.button2);
         btArrayAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1);
-        //Deviceslist.setAdapter(btArrayAdapter);
+        
+        final Configuration config = new Configuration();
+    
+        final Context context = this;
 
         //Turn on Bluetooth
         if (myBlueToothAdapter==null)
@@ -65,6 +66,29 @@ public class MainActivity extends Activity {
         registerReceiver(FoundReceiver, new IntentFilter(BluetoothDevice.ACTION_FOUND));
 	
         spinner.setAdapter(btArrayAdapter);
+        
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+        	   public void onItemSelected(AdapterView<?> parent, View v, int pos, long id) {
+        	      String selectedItem = parent.getItemAtPosition(pos).toString();
+        	      // make insertion into database
+        	      config.name = selectedItem;
+        	   }
+
+        	   public void onNothingSelected(AdapterView<?> parent) {
+
+        	   }
+        	});
+        
+        next.setOnClickListener(new OnClickListener()
+        {
+            public void onClick(View v)
+            {
+            	Intent startChooser = new Intent(context, ChooserActivity.class);
+            	startChooser.putExtra("Config", config);
+            	startActivity(startChooser);
+            }
+        });
 
     }
 
@@ -95,41 +119,6 @@ public class MainActivity extends Activity {
 	                //Change below to submitted selection
                 }
             }
-            //spinner.setAdapter(btArrayAdapter);
         }};
         
-   /* private void pairDevice(BluetoothDevice device) {
-        try {
-            Log.d("pairDevice()", "Start Pairing...");
-            Method m = device.getClass().getMethod("createBond", (Class[]) null);
-            m.invoke(device, (Object[]) null);
-            Log.d("pairDevice()", "Pairing finished.");
-        } catch (Exception e) {
-            Log.e("pairDevice()", e.getMessage());
-        }
-        Set<BluetoothDevice> pairedDevices = myBlueToothAdapter.getBondedDevices();
-        for(BluetoothDevice bt : pairedDevices) {
-        	Log.d("Connecting",device.getName());
-            BluetoothSocket mSocket=null;
-            try {
-                mSocket = device.createInsecureRfcommSocketToServiceRecord(MY_UUID);
-            } catch (IOException e1) {
-                // TODO Auto-generated catch block
-                Log.d("Connecting","socket not created");
-                e1.printStackTrace();
-            }
-            try{
-                mSocket.connect();
-            }
-            catch(IOException e){
-                try {
-                    mSocket.close();
-                    Log.d("Connecting","Cannot connect");
-                } catch (IOException e1) {
-                    Log.d("Connecting","Socket not closed");
-                    e1.printStackTrace();
-                }
-            }
-        } 
-    } */
 }

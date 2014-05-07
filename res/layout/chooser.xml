@@ -1,11 +1,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".MainActivity"
-                android:padding="40dp"
-                android:background="#F0F8FF"
-                android:clickable="true">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    android:clickable="true"
+    android:padding="40dp"
+    tools:context=".MainActivity" >
 
     <TextView
             android:id="@+id/personalize_title"
@@ -184,12 +184,14 @@
             android:layout_marginTop="20dp"
             />
 
-    <SeekBar
+    <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/seekFreqBar"
             android:text="@string/frequency"
             android:layout_below="@+id/freq"
-            android:layout_marginTop="54dp"/>
+            android:layout_marginTop="54dp">
+        
+    </RadioGroup>
 
 </RelativeLayout>
