@@ -226,7 +226,7 @@ public class ChooserActivity extends Activity {
                 config.frequency = (char) seekBar.getProgress();
             }
         });
-        
+
         heightSeek = (SeekBar) findViewById(R.id.heightSeekBar);
         heightSeek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
