@@ -1,5 +1,5 @@
 //Author: Felix Li
-//Description: All the necessary Arduino code to run operation Krober. 
+//Description: All the necessary Arduino code to run operation Kroeber. 
 
 #include "Constants.h"
 #include "IRCommands.h"
@@ -207,7 +207,6 @@ void setup()   {
  
 void loop()                     
 {
-  //repeatCommand(&red, REPEAT);
   //Serial.println("main");
   //listen to bluetooth
     /*
@@ -226,18 +225,20 @@ void loop()
   
   */
  
+ //For random configurations  
+ /*
   if (millis() > currentTime + 5000) {
     change();
     currentTime = millis();
     printConfiguration();
   }
+  */
   
     
   if (Bluetooth.available() > 0) {
-    
-    change();
-  }
-    /*
+    char incomingByte = (char) Bluetooth.read();
+    int intRead = incomingByte;
+  
     //Serial.println("State" + String(state));
     switch(state) {
       case LISTENING: {
@@ -269,44 +270,11 @@ void loop()
         break;
       }
     } //end switch
-    */
+  }
     
   
- // printConfiguration();
-
-  
-  //updateBurst();
-  
-  
-  
-  /*
-  for (int i = 0; i < 256; i+=10) {
-    analogWrite(HeightPWM, i);  
-    Serial.println(i);
-    delay(1000);
-  }
-  */
-  //run();
-  
-  /*
-  Serial.println("Turning On");
-  repeatCommand(&red, REPEAT);
-
-  repeatCommand(&green, REPEAT);
-  repeatCommand(&blue, REPEAT);
-  repeatCommand(&red2, REPEAT);
-  repeatCommand(&green2, REPEAT);
-  repeatCommand(&blue2, REPEAT);
-  repeatCommand(&red3, REPEAT);  
-  repeatCommand(&green3, REPEAT);
-  repeatCommand(&blue3, REPEAT);
-  repeatCommand(&red4, REPEAT);
-  repeatCommand(&green4, REPEAT);
-  repeatCommand(&blue4, REPEAT); 
-  repeatCommand(&red5, REPEAT);
-  repeatCommand(&green5, REPEAT);
-  repeatCommand(&blue5, REPEAT);   
-  */
+ // printConfiguration(); 
+ //run();
 }
 
 
