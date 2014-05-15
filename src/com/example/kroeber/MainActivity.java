@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
             startActivityForResult(BtIntent, 0);
             Toast.makeText(MainActivity.this, "Turning on Bluetooth", Toast.LENGTH_LONG).show();
         }
-        
+  /*
         //Continuously scan
         timer.schedule(new TimerTask()
         {
@@ -81,6 +81,7 @@ public class MainActivity extends Activity {
             	
             }
         }, 0, 10000);
+        */
 
         
         //scan
@@ -112,7 +113,7 @@ public class MainActivity extends Activity {
 
         	   }
         	});
-        
+
         next.setOnClickListener(new OnClickListener()
         {
             public void onClick(View v)

@@ -27,4 +27,6 @@ public class Configuration implements Serializable {
     public String getName() {
         return name;
     }
+
+    public void setName(String bt) { this.name = bt; }
 }

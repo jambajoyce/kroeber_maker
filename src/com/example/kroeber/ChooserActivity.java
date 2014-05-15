@@ -23,6 +23,8 @@ public class ChooserActivity extends Activity {
 		setContentView(R.layout.chooser);
 		Intent i = getIntent();
 		config = (Configuration)i.getSerializableExtra("Config");
+        //name = config.getName();
+        config.setName("Felix");
         name = config.getName();
 		Toast.makeText(ChooserActivity.this, config.name, Toast.LENGTH_LONG).show();
         final Button red1 = (Button) findViewById(R.id.button_red1);
